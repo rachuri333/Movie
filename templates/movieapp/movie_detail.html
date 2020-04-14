@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'movieapp/base.html' %}
+{%block body_block%}
+<h1>Movie information</h1>
+<h2>Moviename :{{movie.MovieName}}</h2>
+  <h2>ShowTime:{{movie.Timing}}</h2>
+  <h2>Location:{{movie.Location}}</h2>
+
+    <a href="/update/{{movie.id}}"class="btn btn lg btn-warning">Update</a>
+    <a href="/delete/{{movie.id}}" class="btn btn lg btn-success">Delete</a>
+
+{%endblock%}

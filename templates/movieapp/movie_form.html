@@ -1,0 +1,14 @@
+  <!DOCTYPE html
+  </head>
+  <body>
+    <h1>Create/Update New Movie Information</h1>
+    <form method="post" >
+
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" class="btn btn-lg btn-primary" value="submit">
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'movieapp/base.html' %}
+{%block body_block%}
+<h1>Movies information</h1>
+{%for movie in movie_list%}
+<ul>
+  <li>MovieName:{{movie.MovieName}}</li>
+  <li>ShowTime:{{movie.Timing}}</li>
+  <li>Location:{{movie.Location}}</li>
+</ul>
+{%endfor%}
+{%endblock%}
